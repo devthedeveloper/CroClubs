@@ -1,0 +1,845 @@
+@import "../css/external/external-core.css";
+@import "../css/internal/internal-core.css";
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+::-moz-selection {
+    color: #ffffff;
+    background-color: #1566ff;
+}
+
+::selection {
+    color: #ffffff;
+    background-color: #1566ff;
+}
+
+/* start of header */
+.b-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    background-color: transparent;
+}
+
+.top-i-top {
+    padding: 10px 10px;
+    background-color: #000000bf;
+}
+
+.cmp-bor-lne {
+    border-top: 10px solid #4b57c3;
+    border-bottom: 10px solid #4b57c3;
+    padding: 5px 5px;
+    background: #000000bf;
+    margin-bottom: 60px;
+}
+
+.cmp-com-wid {
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+}
+
+/* start of navigation */
+.cmp-pad-zer {
+    padding: 0 0;
+}
+
+.ctl-nav-log {
+    width: 50px;
+    height: auto;
+    overflow: hidden;
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: none;
+}
+
+.ctl-nav-log img, .ctl-log-des img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.ctl-log-des {
+    width: 125px;
+    margin: auto;
+    height: auto;
+}
+
+.ctl-nav-lft {
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+}
+
+.ctl-nav-rit {
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+
+.ctl-nav-lft, .ctl-nav-rit {
+    width: 100%;
+}
+
+.ctl-nav-txt {
+    color: #4b57c3;
+    font-size: 33px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: normal;
+    letter-spacing: 1px;
+    display: block;
+    padding: 10px 30px;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    font-family: 'Creepster', cursive;
+    background: -webkit-linear-gradient(#174eb4, #5358c7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ctl-nav-txt:hover, .ctl-dro-txt:hover {
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.ctl-nav-txt.active {
+    color: #ffffff;
+}
+
+.ctl-nav-txt:focus {
+    color: #ffffff;
+}
+.ctl-pla-btn{
+    background-color:#ffffff;
+    padding: 5px;
+}
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.cmp-dro-men {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    border-radius: 0;
+    left: -365px;
+}
+
+.ctl-dro-nav {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: transparent !important;
+    color: #ffffff !important;
+}
+
+.ctl-dro-upp-txt {
+    text-transform: uppercase;
+    border-bottom: 1px solid #b1b1b1;
+    font-weight: 700;
+}
+
+.ctl-dro-cap-txt {
+    text-transform: capitalize;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.ctl-dro-txt {
+    color: #ffffff;
+    font-size: 14px;
+    font-style: normal;
+    text-align: left;
+    line-height: normal;
+    letter-spacing: normal;
+    display: block;
+    padding: 10px 20px;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+
+}
+
+.ctl-dro-txt:focus {
+    color: #ffffff;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.ctl-dro-txt:hover {
+    background-color: transparent;
+}
+
+/* end of navigation */
+
+/* end of header */
+
+/* start of main */
+
+.cmp-ban-pic {
+    background-image: linear-gradient(#00000080, #00000080), url(../images/banner/tree-ghosts-and-zombies.png);
+    box-shadow: inset 0 -10px 70px #000000bf;
+    height: auto;
+    padding: 163px 0 90px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.cmp-bac-pla {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url(../images/background/tree-cartoon-hand-painted.png);
+    height: auto;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    padding: 50px 25px 100px;
+}
+.cmp-bac-cha-one {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.90)), url(../images/background/tree-cartoon-hand-painted.png);
+    height: auto;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    padding: 180px 25px 100px;
+}
+.cmp-bac-cha-upc{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(../images/background/slide-back-tree-danger-terrible-seminar-with-graves.png);
+    height: auto;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    padding: 180px 25px 100px;
+}
+.cmp-bac-cha-two{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.90)), url(../images/background/slide-back-tree-danger-terrible-seminar-with-graves.png);
+    height: auto;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    padding: 50px 25px 100px;
+}
+.cmp-bak-sli {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.90)), url(../images/background/slide-back-tree-danger-terrible-seminar-with-graves.png);
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    padding: 50px 25px 100px;
+}
+
+.cmp-tea-pic {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url(../images/background/team-tree-happy-halloween-creepy-zombie-night.jpg);
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    padding: 100px 25px 100px;
+}
+
+.cmp-bac-ver {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.90)), url(../images/background/tree-ghosts-and-zombies.png);
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    padding: 50px 25px 100px;
+}
+
+.cmp-bak-fot {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url(../images/background/tree-hell-landscape-infernal-stone-cave.png);
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: scroll;
+    padding: 500px 25px 30px;
+    background-color: #000000;
+}
+
+.ctl-ver-cen {
+    height: auto;
+    display: table;
+    margin: auto;
+}
+
+.ctl-ovr-blo {
+    width: 960px;
+    margin: auto;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.ctl-ban-txt {
+    background-color: #000000ab;
+    padding: 30px;
+    box-sizing: border-box;
+    border: 10px solid #4b57c3;
+    border-radius: 32px;
+}
+
+.ctl-des-pad {
+    padding: 25px;
+}
+
+.ctl-log-cen {
+    width: 450px;
+    margin: auto;
+}
+
+.ctl-log-cen img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.ctl-ovl-inf h1 {
+    color: #ffffff;
+    font-size: 106px;
+    font-family: 'Road Rage', cursive;
+    background: -webkit-linear-gradient(#ffffff, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: normal;
+    letter-spacing: normal;
+    padding-bottom: 10px;
+}
+
+.ctl-ovl-inf {
+    margin-bottom: 40px;
+}
+
+.ctl-ovl-inf h2 {
+    color: #ffffff;
+    font-size: 75px;
+    font-family: 'Road Rage', cursive;
+    background: -webkit-linear-gradient(#ffffff, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.ctl-ovl-inf span {
+    color: #f0f;
+    font-size: 80px;
+    font-family: 'Road Rage', cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: normal;
+    letter-spacing: normal;
+    display: block;
+}
+
+.ctl-con-tim {
+    width: 100%;
+    margin: auto;
+}
+
+.ctl-con-tim h2 {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: normal;
+    letter-spacing: 5px;
+    display: block;
+}
+
+.ctl-esc-txt {
+    margin-top: 25px;
+}
+
+.ctl-esc-txt p {
+    color: #ffffff;
+    font-size: 38px;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+    text-transform: inherit;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.ctl-esc-txt p span {
+    background: -webkit-linear-gradient(#174eb4, #5358c7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ctl-sec-top {
+    margin-bottom: 100px;
+}
+
+.ctl-sec-top {
+    background-color: black;
+    padding: 50px 50px 50px 50px;
+    border-radius: 75px;
+    border: 10px solid #4b57c3;
+}
+
+.ctl-hdr-top {
+    padding: 0 50px;
+    margin-bottom: 50px;
+}
+
+.ctl-hdr-top h1, .ctl-hdr-top h2, .ctl-hdr-top h3, .ctl-hdr-top h4 {
+    text-align: center;
+}
+.ctl-faq-hdr{
+    margin-bottom: 50px;
+}
+.ctl-hdr-top h1, .ctl-hdr-top h2, .ctl-hdr-top h3, .ctl-hdr-top h4,.ctl-faq-hdr h2 {
+    color: #4b57c3;
+    font-size: 86px;
+    font-family: 'Road Rage', cursive;
+    background: -webkit-linear-gradient(#4b57c3, #4b57c3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    line-height: normal;
+    letter-spacing: 4px;
+}
+.ctl-faq-hdr h2{
+    text-align: center;
+}
+.ctl-hdr-top h5{
+    color: #ffffff;
+    font-size: 60px;
+    font-family: 'Road Rage', cursive;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: normal;
+    letter-spacing: 4px;
+    padding-top: 25px;
+}
+.ctl-des-bot {
+    padding: 0 70px;
+}
+
+.ctl-des-bot p{
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    text-transform: inherit;
+    line-height: 31px;
+    letter-spacing: normal;
+}
+
+.ctl-des-bot p:not(:last-child) {
+    padding-bottom: 30px;
+}
+.ctl-blo-red-mor,.ctl-blo-faq-mor{
+    margin-top: 45px;
+}
+.ctl-blo-red-mor a:hover,.ctl-blo-faq-mor a:hover{
+    color: #ffffff;
+    background-color: #3854be;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+.ctl-blo-red-mor a{
+    color: #174eb4;
+    font-size: 33px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: normal;
+    letter-spacing: 1px;
+    display: block;
+    padding: 10px 30px;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    font-family: 'Creepster', cursive;
+    background-color: #ffffff;
+    width: 200px;
+    margin: auto;
+}
+.ctl-blo-faq-mor a{
+    color: #174eb4;
+    font-size: 33px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: normal;
+    letter-spacing: 1px;
+    display: block;
+    padding: 10px 30px;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    font-family: 'Creepster', cursive;
+    background-color: #ffffff;
+    max-width: 540px;
+    width: 100%;
+    margin: auto;
+}
+.ctl-sec-bot {
+    background-color: black;
+    padding: 50px 50px 50px 50px;
+    border-radius: 75px;
+    border: 10px solid #4b57c3;
+}
+
+.ctl-sty-cus h3 {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    text-transform: inherit;
+    line-height: normal;
+    letter-spacing: normal;
+    background: -webkit-linear-gradient(#4b57c3, #4b57c3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 25px;
+}
+
+.ctl-scr-pro {
+    width: 500px;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.ctl-scr-gam {
+    width: 500px;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.ctl-scr-cus::-webkit-scrollbar {
+    width: 20px;
+}
+
+
+.ctl-scr-cus::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #4b57c3;
+    border-radius: 10px;
+}
+
+
+.ctl-scr-cus::-webkit-scrollbar-thumb {
+    background-color: #4b57c3;
+    border-radius: 10px;
+}
+
+
+.ctl-scr-cus::-webkit-scrollbar-thumb:hover {
+    background-color: #4b57c3;
+}
+
+.ctl-web-bot {
+    /*margin-top: 70px;*/
+}
+
+.ctl-roa-map-scr, .ctl-roa-gam-scr {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+
+.ctl-rod-map-blo, .ctl-rod-gam-blo {
+    padding-bottom: 50px;
+}
+
+.ctl-col-sta-blo {
+    width: 500px;
+}
+.ctl-col-sta-blo,.ctl-col-sat-blo {
+    background-color: #000000;
+    padding: 30px;
+    box-sizing: border-box;
+    border: 10px solid #4b57c3;
+    border-radius: 75px;
+    height: 100%;
+}
+.ctl-col-sat-blo{
+    width: 100%;
+ }
+.ctl-rod-map-blo:not(:last-child).ctl-col-sta-blo{
+    margin-right: 70px;
+}
+.ctl-std-hdr h4 {
+    color: #4b57c3;
+    font-size: 80px;
+    font-family: 'Road Rage', cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: normal;
+    letter-spacing: normal;
+    display: block;
+}
+
+.ctl-std-hdr {
+    margin-bottom: 20px;
+}
+
+.ctl-std-blo {
+    padding-left: 40px;
+}
+
+.ctl-sta-lis li {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+    font-style: normal;
+    text-align: left;
+    text-transform: inherit;
+    line-height: 32px;
+    letter-spacing: normal;
+    list-style-type: disc;
+}
+
+.ctl-sta-lis li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.ctl-mar-bot-zer {
+    margin-right: 0 !important;
+}
+
+.ctl-tea-mat {
+    background-color: black;
+    padding: 30px 30px 50px;
+    border-radius: 75px;
+    border: 10px solid #4b57c3;
+}
+
+.ctl-tea-inf {
+    margin-bottom: 75px;
+}
+
+.ctl-tea-pic {
+    border: 0;
+    box-shadow: 0 0 10px #000000;
+    width: 100%;
+    /*width: 240px;*/
+    margin: auto;
+}
+
+.ctl-tea-pic img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.ctl-tea-tit {
+    margin-top: 20px;
+}
+
+.ctl-tea-hdr h3 {
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    text-transform: inherit;
+    line-height: 28px;
+    letter-spacing: normal;
+    background: -webkit-linear-gradient(#ffffff, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0 50px;
+}
+
+.ctl-web-top {
+    margin-bottom: 70px;
+}
+
+
+/* end of main */
+
+/* start of footer */
+.cmp-foo-top {
+    margin-bottom: 125px;
+}
+
+.ctl-fot-lnk li, .ctl-soc-lnk li {
+    display: inline-block;
+}
+
+.ctl-fot-lnk li a {
+    color: #ffffff;
+    font-size: 65px;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 75px;
+    letter-spacing: normal;
+    display: block;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    font-family: 'Road Rage', cursive;
+}
+
+.ctl-fot-lnk li:not(:last-child) {
+    margin-right: 25px;
+}
+
+.ctl-fot-lnk li a:hover {
+    text-shadow: 0 0 15px #ffffff, 0 -5px 20px #ffffff, 0 5px 20px #ffffff;
+}
+.ctl-nav-twi li a i:hover,.ctl-soc-lnk li a i:hover{
+    color: #00acee;
+
+}
+.ctl-fot-lnk li a:hover {
+    text-decoration: none;
+    color: #ffffff !important;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.ctl-soc-lnk li a i,.ctl-nav-twi li a i {
+    color: #00acee;
+    /*color: #ffffff;*/
+    font-size: 30px;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.ctl-soc-lnk,.ctl-nav-twi {
+    text-align: right;
+}
+
+.ctl-soc-lnk li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.ctl-cop-txt h5 {
+    color: #5358c7;
+    font-size: 64px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: normal;
+    letter-spacing: 1px;
+    font-family: 'Road Rage', cursive;
+    background: -webkit-linear-gradient(#174eb4, #5358c7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* end of footer */
+
+
+.ctl-faq-que h3{
+    color: #4055c1;
+    /*color: #bc1925;*/
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+    text-transform: inherit;
+    line-height: normal;
+    letter-spacing: normal;
+}
+.ctl-faq-que{
+    margin-bottom: 25px;
+}
+.ctl-faq-ans p{
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+    font-style: normal;
+    text-align: left;
+    text-transform: inherit;
+    line-height: 31px;
+    letter-spacing: normal;
+}
+.ctl-faq-ans p:not(:last-child){
+    padding-bottom: 20px;
+}
+.ctl-faq-ans a{
+    color: #4055c1;
+}
+.ctl-faq-blo li:not(:last-child){
+    margin-bottom: 40px;
+}
+.cmp-nav-pos{
+    position: relative;
+}
+.cmp-nav-soc{
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
